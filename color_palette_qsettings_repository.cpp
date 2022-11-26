@@ -2,8 +2,6 @@
 
 #include <QSettings>
 
-ColorPaletteQSettingsRepository::ColorPaletteQSettingsRepository() = default;
-
 void ColorPaletteQSettingsRepository::save( const QList<QColor>& colors, const QString& swatchName ) {
 
     QSettings settings;

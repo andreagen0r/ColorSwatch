@@ -1,20 +1,21 @@
 import QtQuick
 
 Window {
-    width: 640
-    height: 480
-    visible: true
-    title: qsTr("Color Swatches")
+  width: 640
+  height: 480
+  visible: true
+  title: qsTr("Color Swatches")
+  minimumWidth: 300
 
-    Rectangle {
-        anchors.fill: parent
-        color: "#2E2E33"
-    }
+  Rectangle {
+    anchors.fill: parent
+    color: "#2E2E33"
+  }
 
-    ColorSwatch {
-        anchors.fill: parent
-        onColorChanged: (color)=> {
-                             console.log("Current color: ", color)
-                         }
-    }
+  ColorSwatch {
+    anchors.fill: parent
+    //    onColorChanged: color => {
+    //                      console.log("Current color: ", color)
+    //                    }
+  }
 }
